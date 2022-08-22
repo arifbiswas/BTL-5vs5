@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body class="bg-slate-900">
-    <header class="h-full">
+    <header class="h-full w-full">
       <div class="baner-cover">
         <div class="layer-of-black">
           <h1 class="font-black text-center text-6xl pt-40 text-orange-300">
@@ -22,9 +22,9 @@
             class="text-sm pb-40 w-6/12 mx-auto font-bold text-center pt-8 text-white"
           >
             এখানে আপনি প্রথমে আপনার মত করে যে কোন ৫ জন প্লেয়ার নিতে পারেন ,
-            আমাদের লীগে যোগদান করার জন্য । ৫ জনের বেশি নিতে পারবেন না । এবং এখানে
-            আপনি আপনার মত করে ম্যনেজার ও কোচ এর পরিমান সেট করে নিতে পারেন ,
-            তাহলে দেরি কিসে এখনি যাপিয়ে পরুন (ধন্যবাদ)
+            আমাদের লীগে যোগদান করার জন্য । ৫ জনের বেশি নিতে পারবেন না । এবং
+            এখানে আপনি আপনার মত করে ম্যনেজার ও কোচ এর পরিমান সেট করে নিতে পারেন
+            , তাহলে দেরি কিসে এখনি যাপিয়ে পরুন (ধন্যবাদ)
           </p>
         </div>
       </div>
@@ -32,151 +32,268 @@
 
     <!-- Main section  -->
 
-    <main class="my-20 w-11/12 mx-auto md:flex  ">
+    <main
+      class="my-20 ml-3 md:ml-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+    >
       <!-- Card sectoin  -->
-      
-        <section class="player-section ">
-            <div class="grid md-grid-cols-1 md:grid-cols-3 gap-10">
 
-            <!-- Card 1 -->
-            <div class="card bg-blue-900 w-96">
-                <figure class="">
-                    <img class="bg-white rounded-xl w-full" src="images/Virat-Kohli.png" alt="">
-                </figure>
-                 <div class="my-3 text-center">
-                    <h2 class=" mt-2 text-2xl text-white  font-black text-center">বিরাট কোহলি</h2>
-                    <p class=" text-xs text-white  font-black text-center mt-2">বিরাট কোহলি দিল্লিতে জন্মগ্রহণকারী ভারতের আন্তর্জাতিক ক্রিকেটার।বাবার নাম প্রেম কোহলি।</p>
-                    <button onclick="selectBtn(this)" class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2">
-                    নির্বাচিত
-                    </button>
-                 </div>
+      <section class="md:col-span-2">
+        <div
+          style="justify-content: center"
+          class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <!-- Card 1 -->
+          <div class="card bg-blue-900 mb-10">
+            <figure class="">
+              <img
+                class="bg-white rounded-xl w-full"
+                src="images/Virat-Kohli.png"
+                alt=""
+              />
+            </figure>
+            <div class="my-3 text-center">
+              <h2 class="mt-2 text-2xl text-white font-black text-center">
+                বিরাট কোহলি
+              </h2>
+              <p class="text-xs text-white font-black text-center mt-2">
+                বিরাট কোহলি দিল্লিতে জন্মগ্রহণকারী ভারতের আন্তর্জাতিক
+                ক্রিকেটার।<br> বাবার নাম প্রেম কোহলি।
+              </p>
+              <button 
+                onclick="selectBtn(this)"
+                class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2"
+              >
+                নির্বাচিত
+              </button>
             </div>
-            <!-- Card 1  end-->
-            
-            <!-- Card 2 -->
-            <div class="card bg-blue-900 w-96">
-                <figure class="">
-                    <img class="bg-white rounded-xl w-full" src="images/Babar-Azam.png" alt="">
-                </figure>
-                 <div class="my-3 text-center">
-                    <h2 class=" mt-2 text-2xl text-white  font-black text-center">বাবর আজম</h2>
-                    <p class=" text-xs text-white  font-black text-center mt-2">মোহাম্মাদ বাবর আজম একজন পাকিস্তানি আন্তর্জাতিক ক্রিকেটার, যিনি ক্রিকেটের অধিনায়ক হিসেবে দায়িত্ব পালন করছেন। </p>
-                    <button  class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2">
-                    নির্বাচিত
-                    </button>
-                 </div>
-            </div>
-            <!-- Card 2  end-->
-            <!-- Card 3 -->
-            <div class="card bg-blue-900 w-96">
-                <figure class="">
-                    <img class="bg-white rounded-xl w-full" src="images/sakib-al-ahsan.png" alt="">
-                </figure>
-                 <div class="my-3 text-center">
-                    <h2 class=" mt-2 text-2xl text-white  font-black text-center">সাকিব আল হাসান</h2>
-                    <p class=" text-xs text-white  font-black text-center mt-2">সাকিব আল হাসান একজন বাংলাদেশী ক্রিকেটার। তিনি বামহাতি মিডল অর্ডার ব্যাটসম্যান এবং বামহাতি অর্থোডক্স স্পিনার। </p>
-                    <button class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2">
-                    নির্বাচিত
-                    </button>
-                 </div>
-            </div>
-            <!-- Card 3  end-->
-            
-            <!-- Card 4 -->
-            <div class="card bg-blue-900 w-96">
-                <figure class="">
-                    <img class="bg-white rounded-xl w-full" src="images/Rishabh Rajendra Pant.png" alt="">
-                </figure>
-                 <div class="my-3 text-center">
-                    <h2 class=" mt-2 text-2xl text-white  font-black text-center">রিশাভ প্যান্ট</h2>
-                    <p class=" text-xs text-white  font-black text-center mt-2">ঋষভ রাজেন্দ্র পন্ত উত্তরাখণ্ডের হরিদ্বারের রুরকি এলাকায় জন্মগ্রহণকারী প্রথিতযশা পেশাদার ভারতীয় আন্তর্জাতিক ক্রিকেটার।</p>
-                    <button class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2">
-                    নির্বাচিত
-                    </button>
-                 </div>
-            </div>
-            <!-- Card 4  end-->
-            
-            <!-- Card 5 -->
-            <div class="card bg-blue-900 w-96">
-                <figure class="">
-                    <img class="bg-white rounded-xl w-full" src="images/Quinton-de-Kock.png" alt="">
-                </figure>
-                 <div class="my-3 text-center">
-                    <h2 class=" mt-2 text-2xl text-white  font-black text-center">কুইন্টন ডি কক</h2>
-                    <p class=" text-xs text-white  font-black text-center mt-2">কুইন্টন ডি কক জোহানেসবার্গে জন্মগ্রহণকারী দক্ষিণ আফ্রিকান ক্রিকেটার।</p>
-                    <button class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2">
-                    নির্বাচিত
-                    </button>
-                 </div>
-            </div>
-            <!-- Card 5  end-->
-            
-            <!-- Card 6 -->
-            <div class="card bg-blue-900 w-96">
-                <figure class="">
-                    <img class="bg-white rounded-xl w-full" src="images/rohit-sharma.png" alt="">
-                </figure>
-                 <div class="my-3 text-center">
-                    <h2 class=" mt-2 text-2xl text-white  font-black text-center">রোহিত শর্মা</h2>
-                    <p class=" text-xs text-white  font-black text-center mt-2">রোহিত গুরুনাথ শর্মা মহারাষ্ট্রে জন্মগ্রহণকারী ভারতীয় আন্তর্জাতিক ক্রিকেটার।</p>
-                    <button class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2">
-                    নির্বাচিত
-                    </button>
-                 </div>
-            </div>
-            <!-- Card 6  end-->
-            
-
           </div>
-          
+          <!-- Card 1  end-->
+
+          <!-- Card 2 -->
+          <div class="card bg-blue-900 mb-10">
+            <figure class="">
+              <img
+                class="bg-white rounded-xl w-full"
+                src="images/Babar-Azam.png"
+                alt=""
+              />
+            </figure>
+            <div class="my-3 text-center">
+              <h2 class="mt-2 text-2xl text-white font-black text-center">
+                বাবর আজম
+              </h2>
+              <p class="text-xs text-white font-black text-center mt-2">
+                মোহাম্মাদ বাবর আজম একজন পাকিস্তানি আন্তর্জাতিক ক্রিকেটার, যিনি
+                ক্রিকেটের অধিনায়ক হিসেবে দায়িত্ব পালন করছেন।
+              </p>
+              <button 
+                onclick="selectBtn(this)"
+                class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2"
+              >
+                নির্বাচিত
+              </button>
+            </div>
+          </div>
+          <!-- Card 2  end-->
+          <!-- Card 3 -->
+          <div class="card bg-blue-900 mb-10">
+            <figure class="">
+              <img
+                class="bg-white rounded-xl w-full"
+                src="images/sakib-al-ahsan.png"
+                alt=""
+              />
+            </figure>
+            <div class="my-3 text-center">
+              <h2 class="mt-2 text-2xl text-white font-black text-center">
+                সাকিব আল হাসান
+              </h2>
+              <p class="text-xs text-white font-black text-center mt-2">
+                সাকিব আল হাসান একজন বাংলাদেশী ক্রিকেটার। তিনি বামহাতি মিডল
+                অর্ডার ব্যাটসম্যান এবং বামহাতি অর্থোডক্স স্পিনার।
+              </p>
+              <button
+                onclick="selectBtn(this)"
+                class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2"
+              >
+                নির্বাচিত
+              </button>
+            </div>
+          </div>
+          <!-- Card 3  end-->
+
+          <!-- Card 4 -->
+          <div class="card bg-blue-900 mb-10">
+            <figure class="">
+              <img
+                class="bg-white rounded-xl w-full"
+                src="images/Rishabh Rajendra Pant.png"
+                alt=""
+              />
+            </figure>
+            <div class="my-3 text-center">
+              <h2 class="mt-2 text-2xl text-white font-black text-center">
+                রিশাভ প্যান্ট
+              </h2>
+              <p class="text-xs text-white font-black text-center mt-2">
+                ঋষভ রাজেন্দ্র পন্ত উত্তরাখণ্ডের হরিদ্বারের রুরকি এলাকায়
+                জন্মগ্রহণকারী প্রথিতযশা পেশাদার ভারতীয় আন্তর্জাতিক ক্রিকেটার।
+              </p>
+              <button
+                onclick="selectBtn(this)"
+                class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2"
+              >
+                নির্বাচিত
+              </button>
+            </div>
+          </div>
+          <!-- Card 4  end-->
+
+          <!-- Card 5 -->
+          <div class="card bg-blue-900 mb-10">
+            <figure class="">
+              <img
+                class="bg-white rounded-xl w-full"
+                src="images/Quinton-de-Kock.png"
+                alt=""
+              />
+            </figure>
+            <div class="my-3 text-center">
+              <h2 class="mt-2 text-2xl text-white font-black text-center">
+                কুইন্টন ডি কক
+              </h2>
+              <p class="text-xs text-white font-black text-center mt-2">
+                কুইন্টন ডি কক <br> জোহানেসবার্গে জন্মগ্রহণকারী দক্ষিণ আফ্রিকান <br>
+                ক্রিকেটার।
+              </p>
+              <button
+                onclick="selectBtn(this)"
+                class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2"
+              >
+                নির্বাচিত
+              </button>
+            </div>
+          </div>
+          <!-- Card 5  end-->
+
+          <!-- Card 6 -->
+          <div class="card bg-blue-900 mb-10">
+            <figure class="">
+              <img
+                class="bg-white rounded-xl w-full"
+                src="images/rohit-sharma.png"
+                alt=""
+              />
+            </figure>
+            <div class="my-3 text-center">
+              <h2 class="mt-2 text-2xl text-white font-black text-center">
+                রোহিত শর্মা
+              </h2>
+              <p class="text-xs text-white font-black text-center mt-2">
+                রোহিত গুরুনাথ শর্মা <br> মহারাষ্ট্রে জন্মগ্রহণকারী ভারতীয়
+                <br> আন্তর্জাতিক ক্রিকেটার।
+              </p>
+              <button
+                onclick="selectBtn(this)"
+                class="text-white bg-slate-900 px-10 py-2 rounded-lg mt-4 border-2"
+              >
+                নির্বাচিত
+              </button>
+            </div>
+          </div>
+          <!-- Card 6  end-->
+        </div>
       </section>
-      <section class=" calculate ">
-        <div class="bg-slate-800 md:ml-8 rounded-lg pb-10">
-            <h2 class="text-white text-4xl font-bold pb-10 pt-8 text-center">নির্বাচিত - খেলোয়াড় </h2>
-                 <div id="Player-নির্বাচিতed" class="h-80 ">
 
-                    <ul class=" flex gap-20 text-xl text-white pl-10 pb-6">
-                    <li>1</li>
-                    <li>Sakib al Hasan</li>
-                    <li></li>
-                   </ul>  
+      <!-- Budget Sectin  -->
 
-                 </div>                 
+      <section class="md:col-span-2 lg:col-span-1">
+        <div class="bg-slate-800 md:ml-2 mr-3 md:mr-12 rounded-lg pb-10">
+          <h2 class="text-white text-4xl font-bold pb-10 pt-8 text-center">
+            নির্বাচিত - খেলোয়াড়
+          </h2>
+          <div id="Player-select" class="h-80"></div>
         </div>
-        <div class="bg-slate-800 md:ml-8 rounded-lg pb-10 mt-12 h-ful text-center">
-            <h2 class="text-white text-4xl font-bold pb-10 pt-8 text-center">বাজেট</h2>
-            <div class="flex justify-around gap-10 px-5">
-                <h2 class="text-slate-400 text-2xl">প্রতি খেলোয়াড় </h2>
-                <input class="px-3 py-2 bg-slate-800 text-white border-2" type="text" name="" id="">
-            </div>
-            <button class="text-2xl mt-8 bg-blue-600 text-white py-4 px-20  w-10/12">খেলোয়াড় খরচ</button>
-            
-            <div class="flex ">
-                <h2 class="text-slate-400 text-2xl text-left pl-11 mt-8 mb-5 " >মোট খেলোয়াড় খরচ</h2>
-                <h2 class="text-slate-400 text-2xl text-left pl-12 mt-8 mb-5 ">$<span>5000</span></h2>
-            </div>
-            <div class="flex justify-around gap-10 px-5 ">
-                <h2 class="text-slate-400 text-2xl">ম্যানেজার </h2>
-                <input class="px-3 py-2 bg-slate-800 text-white border-2" type="text" name="" id="">
-            </div>
-            <div class="flex justify-around gap-10 px-5 mt-3">
-                <h2 class="text-slate-400 text-2xl">কোচ </h2>
-                <input class="px-3 py-2 ml-12 bg-slate-800 text-white border-2" type="text" name="" id="">
-            </div>
-            <button class="text-2xl mt-8 bg-blue-600 text-white py-4 px-20  w-10/12">মোট খরচ</button>
-            <div class="flex justify-between">
-                <h2 class="text-slate-400 text-2xl text-left pl-11 mt-8 mb-5 ">মোট</h2>
-            <h2 class="text-slate-400 text-2xl mt-8 mb-5 ">$<span class="text-slate-400 text-2xl  pr-11 mt-8 mb-5 ">1000</span></h2>
-            </div>
-        </div>
+        <div
+          class="bg-slate-800 md:ml-2 mr-3 md:mr-12 rounded-lg pb-10 mt-12 h-ful text-center"
+        >
+          <h2 class="text-white text-4xl font-bold pb-10 pt-8 text-center">
+            বাজেট
+          </h2>
+          <div class="flex justify-around gap-10 px-5">
+            <h2 class="text-slate-400 text-2xl">প্রতি খেলোয়াড়</h2>
+            <input
+              class="px-3 py-2 bg-slate-800 text-white border-2"
+              type="text"
+              name=""
+              id="player-budget"
+              placeholder="Enter Your budget"
+            />
+          </div>
+          <button
+            id="player-cost"
+            class="text-2xl mt-8 bg-blue-600 text-white py-4 px-20 w-10/12"
+          >
+            খেলোয়াড় খরচ
+          </button>
 
-     </section>
-      
+          <div class="flex">
+            <h2 class="text-slate-400 text-2xl text-left pl-11 mt-8 mb-5">
+              মোট খেলোয়াড় খরচ
+            </h2>
+            <h2 class="text-slate-400 text-2xl text-left pl-12 mt-8 mb-5">
+              $<span id="Player-total-cost">00</span>
+            </h2>
+          </div>
+          <div class="flex justify-around gap-10 px-5">
+            <h2 class="text-slate-400 text-2xl">ম্যানেজার</h2>
+            <input
+              id="manager-cost"
+              class="px-3 py-2 bg-slate-800 text-white border-2"
+              type="text"
+              name=""
+              placeholder="Enter manager budget"
+            />
+          </div>
+          <div class="flex justify-around gap-10 px-5 mt-3">
+            <h2 class="text-slate-400 text-2xl">কোচ</h2>
+            <input
+              id="coach-cost"
+              class="px-3 py-2 ml-12 bg-slate-800 text-white border-2"
+              type="text"
+              name=""
+              placeholder="Enter Coach budget"
+            />
+          </div>
+          <button
+            id="total-cost"
+            class="text-2xl mt-8 bg-blue-600 text-white py-4 px-20 w-10/12"
+          >
+            মোট খরচ
+          </button>
+          <div class="flex justify-between">
+            <h2 class="text-slate-400 text-2xl text-left pl-11 mt-8 mb-5">
+              মোট
+            </h2>
+            <h2 class="text-2xl mt-8 mb-5 text-red-400">
+              $<span id="in-Total-Cost" class="text-2xl pr-11 mt-8 mb-5"
+                >00</span
+              >
+            </h2>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="js/common.js"></script>
     <script src="js/playerSelect.js"></script>
     <script src="js/Manger&Coch.js"></script>
+
+    <footer class="bg-black">
+      <hr class="opacity-40" />
+      <h3 class="text-white text-center py-11">
+        Copyright @ 2022 All Rights Reserved.
+      </h3>
+    </footer>
   </body>
 </html>
