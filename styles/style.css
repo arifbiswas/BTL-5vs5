@@ -1,0 +1,37 @@
+.baner-cover{
+    background-color: rgba(0, 0, 0, 0.37);
+    background-image: url(/cover.jpg) ;
+    background-repeat: none ;
+    background-size: cover;
+
+}
+.layer-of-black{
+    background: rgba(0, 0, 0, 0.718);
+}
+
+.main-section{
+    display: flex;
+}
+.player-section{
+ width: 70%;
+}
+img{
+    
+    height: 300px !important;
+}
+.calculate{
+    width: 30%;
+}
+.card{
+    width: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+    .player-section {
+                width: 100%;
+            }
+    .calculate {
+            width: 100%;
+            margin-top: 40px;
+        }
+}
