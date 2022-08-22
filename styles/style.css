@@ -1,7 +1,4 @@
 
-header{
-    width: 100vw;
-}
 .baner-cover{
     background-color: rgba(0, 0, 0, 0.37);
     background-image: url(/cover.jpg) ;
@@ -19,9 +16,5 @@ img{
 }
 
 .card{
-    width: 320px !important;
-}
-
-footer{
-    width: 100vw;
+    width: 350px !important;
 }

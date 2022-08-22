@@ -12,8 +12,8 @@ const playerName = btn.parentNode.children[0].innerText;
     const playerSelectSection = document.getElementById('Player-select');
     const tr = document.createElement('tr');
     tr.innerHTML = `
-    <ul class=" flex gap-20 text-xl text-white pl-10 pb-6">
-                    <li>${plyerCount}</li>
+    <ul class=" flex gap-20 text-xl text-white pl-12 pb-6">
+                    <li class="font-bold">${plyerCount}</li>
                     <li>${playerName}</li>
                    </ul> 
     `

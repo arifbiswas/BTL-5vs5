@@ -212,18 +212,18 @@
           <h2 class="text-white text-4xl font-bold pb-10 pt-8 text-center">
             নির্বাচিত - খেলোয়াড়
           </h2>
-          <div id="Player-select" class="h-80"></div>
+          <div  id="Player-select" class="h-80 flex flex-col"></div>
         </div>
         <div
           class="bg-slate-800 md:ml-2 mr-2 md:mr-12 rounded-lg pb-10 mt-12 h-ful text-center"
         >
-          <h2 class="text-white text-4xl font-bold pb-10 pt-8 text-center">
+          <h2 class="text-white text-4xl font-bold pb-20 pt-10 text-center">
             বাজেট
           </h2>
-          <div class="flex justify-around gap-10 px-5">
+          <div class="flex justify-evenly">
             <h2 class="text-slate-400 text-2xl">প্রতি খেলোয়াড়</h2>
             <input
-              class="px-3 py-2 bg-slate-800 text-white border-2"
+              class="px-10 py-4 ml-12 bg-slate-800 text-white border-2 text-xl rounded-xl "
               type="text"
               name=""
               id="player-budget"
@@ -237,29 +237,29 @@
             খেলোয়াড় খরচ
           </button>
 
-          <div class="flex">
-            <h2 class="text-slate-400 text-2xl text-left pl-11 mt-8 mb-5">
+          <div class="flex justify-evenly">
+            <h2 class="text-slate-400 text-3xl text-left  mt-12 mb-12">
               মোট খেলোয়াড় খরচ
             </h2>
-            <h2 class="text-slate-400 text-2xl text-left pl-12 mt-8 mb-5">
+            <h2 class="text-red-400 text-3xl text-left  mt-12 mb-12">
               $<span id="Player-total-cost">00</span>
             </h2>
           </div>
-          <div class="flex justify-around gap-10 px-5">
+          <div class="flex justify-evenly gap-10 px-5">
             <h2 class="text-slate-400 text-2xl">ম্যানেজার</h2>
             <input
               id="manager-cost"
-              class="px-3 py-2 bg-slate-800 text-white border-2"
+              class="px-6 py-3 bg-slate-800 text-white border-2 text-xl rounded-xl "
               type="text"
               name=""
               placeholder="Enter manager budget"
             />
           </div>
-          <div class="flex justify-around gap-10 px-5 mt-3">
+          <div class="flex justify-evenly gap-10 px-5 mt-3">
             <h2 class="text-slate-400 text-2xl">কোচ</h2>
             <input
               id="coach-cost"
-              class="px-3 py-2 ml-12 bg-slate-800 text-white border-2"
+              class="px-6 py-3 ml-12 bg-slate-800 text-white border-2 text-xl rounded-xl "
               type="text"
               name=""
               placeholder="Enter Coach budget"
@@ -272,11 +272,11 @@
             মোট খরচ
           </button>
           <div class="flex justify-around">
-            <h2 class="text-slate-400 text-2xl text-left pl-11 mt-8 mb-5">
+            <h2 class="text-slate-400 text-3xl text-left  mt-12 mb-12">
               মোট
             </h2>
-            <h2 class="text-2xl mt-8 mb-5 text-red-400">
-              $<span id="in-Total-Cost" class="text-2xl pr-11 mt-8 mb-5"
+            <h2 class="text-3xl mt-12 mb-1 text-red-400">
+              $<span id="in-Total-Cost" class="text-3xl  mt-12 mb-12"
                 >00</span
               >
             </h2>
