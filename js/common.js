@@ -13,6 +13,6 @@ function getElementValue(elementId) {
 }
 function setElementValue(elementId, elementValue) {
     const element = document.getElementById(elementId);
-    const elementString = element.innerText;
-    elementString = elementValue;
+     element.innerText = elementValue;
+    
 }
